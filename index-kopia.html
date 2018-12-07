@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
+    <title>Documeeent</title>
+=======
+    <title>Document2</title>
+>>>>>>> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
+    <style>
+        body
+        {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            margin: 5gwegwgwpx;
+=======
+            margin: 0;
+>>>>>>> parent of 4899269... dodanecos
+=======
+            margin: 0;
+>>>>>>> parent of 4899269... dodanecos
+            padding: 0;
+            background-image: url('tlo.jpg');
+            overflow: hidden;
+            height: 100vh;
+
+        }
+        h1
+        {
+            font-size: 50px;
+            color: rgba(255, 225, 181, 0.884);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 5px;
+        }
+    .grid-cont
+    {
+        display: grid;
+        grid-template-columns: repeat(4,minmax(100px,300px));
+        grid-auto-rows:25vh;
+        grid-gap: 10px;
+    }
+    .input
+    {
+     display: grid;
+     grid-template-columns: repeat(1,minmax(25px,1fr));
+     grid-auto-rows: 1fr;
+     grid-column: 2/4;
+     grid-row: 2/3;
+        
+    }
+    .input form
+    {
+       align-self: center;
+    }
+
+    header
+    {
+        grid-column:2/4;
+    }
+    form button
+    {
+        width:130px;
+        cursor: pointer;
+    }
+    form input,button
+    {
+        height: 45px;
+        background-color:rgba(38, 60, 117, 0.719);
+        font-size: 20px;
+        border: 2px solid rgba(0, 0, 0, 0.479);
+        color: rgba(255, 225, 181, 0.884);
+        width: 60%;
+        border-radius: 20px;
+    }
+    .tascs
+    {
+        display: grid;
+        grid-template-columns: repeat(4,minmax(60px,1fr));
+        grid-auto-rows: 200px;
+        grid-gap: 2%;
+        width: 60vw;
+        height: 100vh;
+    }
+    .tekst1,.tekst3,.tekst2
+    {
+        background-color:rgba(38, 60, 117, 0.719);
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 4%;
+        box-shadow: 1px 1px 1px 2px rgba(4, 7, 173, 0.63);
+        background-image: url(notatka.png);
+        background-position: center;
+    }
+    .tekst1
+    {
+        grid-row: 2/3;
+        grid-column: 2/2;
+        cursor: pointer;
+        width:200px;
+        word-wrap: break-word;
+        height: 200px;
+        position: absolute;
+        z-index: 2;
+    }
+    .tekst3
+    {
+        grid-row: 1/1;
+        grid-column: 2/4;
+        margin-right: 6vw;
+        position:relative;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.4s linear;
+      
+    }
+    .tekst3 .mini
+    {
+        background-color: rgba(0, 0, 0, 0.719);
+        color: antiquewhite;
+        width: 25%;
+        left:-25%;
+        top: 0%;
+        justify-content: space-evenly;
+        position: absolute;
+        display: flex;
+        transition: 0.4s linear;
+        flex-direction: column;
+        z-index: 1;
+        height: 100%;
+    }
+    .tekst3 .mini p
+    {
+        margin: 4px 0;
+    }
+    .tekst3 .mini.active1
+    {
+        left:0%;
+    }
+    .tekst3 .mini p
+    {
+        background-color: rgba(41, 144, 192, 0.726);
+        border-radius: 20px;
+        padding: 15px;
+        transition: 0.2s linear;
+        line-height: 0;
+    }
+   .tekst3 i
+    {
+        font-size: 30px;
+        position: absolute;
+        left: calc(100% - 30px);
+        top: calc(100% - 30px);
+        transition: 0.2s linear;
+    }
+    .tekst3 i:hover
+    {
+        color: rgb(6, 29, 235);
+    }
+    .tekst3 i.active
+    {
+        position: absolute;
+
+    }
+    .tekst3.x
+    {
+        position: absolute;
+    }
+    .mini p:hover
+    {
+        background-color: brown;
+    }
+    .three
+    {
+        
+    }
+     
+  
+ 
+    
+    </style>
+</head>
+<body>
+    <div class="grid-cont">
+  
+       <header>
+           <h1>Zapisz swoje zadania</h1>
+       </header>
+       <section class="input">
+           <form>
+               <input type="text">
+               <button>Dodaj</button>
+           </form>
+       </section>
+       <section class="tascs">
+           <div class="tekst1 rusz"><p>Ruchoma karteczka</p></div>
+           <div class="tekst2 rusz"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, eaque illum! Voluptas molestiae aut veritatis vel tempora.veniam quam aspernatur nemo odio. Quam.</p></div>
+           <div class="tekst3 rusz2"><p class='x'></p><i class="fas fa-plus"></i>
+          <div class="mini">
+          <p class="one">Ustaw</p>
+          <p class="two">Data</p>
+          <p class="three">Usun</p>
+        </div>
+        </div>
+       </section>
+
+
+
+     <script>
+     const add=document.querySelector('button');
+     const tekst1=document.querySelector('.tekst1');
+     const tekstmin=document.querySelector('i');
+     const tekstmin2=document.querySelector('.tekst3 .mini');
+     const tekst2=document.querySelector('.tekst2');
+     const tekst3=document.querySelector('.tekst3 p');
+     const tekst23=document.querySelector('.tekst3');
+     const list=document.getElementById('list');
+     let inputt=document.querySelector('input');
+     const div=document.createElement('div');
+     const minidiv=document.querySelectorAll('.mini p');
+     div.setAttribute('id','one');
+     let divX=50;
+     let divY=60;
+     let tekst1hx;
+     let tekst2hy;
+     let draw=false;
+     let dra=false;
+     tekst1.style.left =`${divX}%`;
+     tekst1.style.top =`${divY}%`;
+     function klik(e)
+     {
+        draw=!draw;
+        tekst1hx=e.offsetX;
+        tekst1hy=e.offsetY;
+        tekst1.style.opacity=0.7;
+        
+     }
+     function move(e)
+     {  dra=!dra;
+        if(draw)
+        { 
+        divX=e.clientX-tekst1hx;
+        divY=e.clientY-tekst1hy;
+        tekst1.style.left =`${divX}px`;
+        tekst1.style.top =`${divY-50}px`;
+        console.log(tekst1);
+        }
+     }
+     function end(e)
+     {
+        draw=!draw;
+        tekst1.style.opacity=1;
+     }
+     //dodaj efekt na kafelki
+    /* function addEfect()
+       {  
+        
+          div.style.position='absolute';
+          div.style.left=0 + '%';
+          div.style.bottom=0 + '%';
+          div.style.height= 30 +'px';
+          div.style.width= 100 +'%';
+          div.style.backgroundColor='blue';
+          document.body.querySelector(".rusz2").appendChild(div);
+    
+       }
+       */
+
+     // Ok teraz tekst add
+
+     const tekst=[];
+     const tekst22=[];
+
+     function change()
+     {
+         dra=!dra;
+     }
+     function change2()
+     {
+         dra=dra;
+     }
+     
+
+     function addtekst(e)
+     {
+         e.preventDefault();
+        if(dra)
+        {
+         teksty=inputt.value;
+         tekst.push(teksty);
+         tekst1.textContent=tekst;
+         inputt.value= " ";
+        }
+        else if(!dra)
+        {
+         teksty=inputt.value;
+         tekst22.push(teksty);
+         tekst3.innerHTML=`<li>${tekst22} <br/></li>`;
+         inputt.value= " "; 
+        }
+        
+     }
+    /* function usun()
+     {
+        document.getElementById('one').remove();
+     }
+     */
+    function option()
+    {
+        tekstmin2.classList.toggle('active1');
+    }
+    
+    function war(x)
+    {
+    
+     if( x=='two')
+            {   
+            let data=()=>
+                {
+                    var today = new Date();
+                    var dd = today.getDate();
+                    var tt= today.getHours();
+                    var tm=today.getMinutes();
+                    var ts=today.getSeconds();
+                    var mm = today.getMonth()+1; //January is 0!
+                    var yyyy = today.getFullYear();
+
+                      if(dd<10) {
+                      dd = '0'+dd
+                         } 
+                         if(tm<10) {
+                      tm = '0'+tm
+                         } 
+                         if(ts<10) {
+                      ts = '0'+ts
+                         } 
+
+                     if(mm<10) {
+                      mm = '0'+mm
+                      } 
+
+                    today = mm + '/' + dd + '/' + yyyy;
+                    today = mm + '/' + dd + '/' + yyyy +'  /  '+ tt+':'+tm+':'+ts;
+                    tekst3.textContent=today;
+                    tekst3.style.fontSize=40+'px';
+                    tekst3.style.lineHeight=70+'px';
+                } 
+                let costam= setInterval(data, 20);  
+                return costam
+            } 
+
+        else if(x=='three')
+            {
+              tekst3.textContent='';
+               clearInterval(costam);
+            }
+
+                 
+                
+         }
+           
+    
+
+    const addopt=function()
+        {
+            this.className
+            const warunki=war(this.className);
+            
+        } 
+            
+            
+
+    
+     minidiv.forEach(mini=>mini.addEventListener('click',addopt));
+     tekst1.addEventListener('mousedown',klik);
+     tekst1.addEventListener('mousemove',move);
+     tekst23.addEventListener('click',change);
+     tekst1.addEventListener('click',change2);
+    // window.addEventListener('mouseover',usun);
+     //tekst3.addEventListener('click',addEfect);
+     tekst1.addEventListener('mouseup',end);
+     add.addEventListener('click',addtekst);
+     tekstmin.addEventListener('click',option);
+     
+     </script>
+    </div>
+</body>
+</html>
