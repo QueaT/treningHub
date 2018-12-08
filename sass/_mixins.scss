@@ -1,0 +1,13 @@
+@mixin size($wid,$heigt) {
+    width: $wid;
+    height:$heigt;
+}
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}
+@mixin  fontstyle($col,$size) {
+    color: $col;
+    font-size: $size;
+    list-style-type: none;
+}
