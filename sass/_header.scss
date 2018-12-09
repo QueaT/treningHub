@@ -6,17 +6,28 @@ $nav_color2:rgb(66, 11, 92);
 
 body
 {
-@include size(100%,100vh )
+@include size(100%,100vh );
 }
 header
 {
-overflow: hidden;
-@include size(100%,10% )
+ overflow: hidden;
+ @include size(100%,10%);
+ position: relative;
+ display: flex;
 
 }
 header nav
 {
-    @include size(100%,60% )
+    @include size(100%,60%)
+}
+.header-nav_logo
+{
+    background: url('../zdj/logo2.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    @include size(40%,60%);
+    left: 1rem;
+    top: 0.2rem;
 }
 .header-nav ul
 {
@@ -32,6 +43,7 @@ align-items: center;
 @include fontstyle(white,1.3rem);
 width: 4%;
 padding: 1rem;
+margin-right: 1rem;
 position: relative;
 transition: 0.3s linear;
 }
@@ -60,14 +72,42 @@ transition: 0.3s linear;
     top: 100%;
     opacity: 1;
 }
+.header-nav ul>.active::before
+{
+    content: '';
+    border-bottom: 3px $nav_color1 solid;
+    position: absolute;
+    @include size(70%,0%);
+    top: 100%;
+    opacity: 1;
+}
 svg
 {
 background: linear-gradient($nav_color1,rgb(218, 79, 236));
 z-index: -1;
+transform:scale(1);
 position: fixed;
-transform: rotate(90deg);
+animation: roll 5s linear alternate infinite;
+
 }
 .fd
 {
+z-index: -1;
 fill: $nav_color2;
+animation: roll 5s linear alternate infinite;
+}
+
+
+@keyframes roll
+{
+    0%
+    {
+        transform:scale(1);
+       
+    }
+  
+    100%
+    {
+        transform:scale(1.2);
+    }
 }
